@@ -6,7 +6,7 @@ def oxford_comma(array)
     return str
   else
     str = ""
-    array.each_with_index do |ele, idx|
+    array.each do |ele|
       if ele != array[-1]
         str += ele + ", "
       elsif ele == array[-1]
