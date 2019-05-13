@@ -7,9 +7,9 @@ def oxford_comma(array)
   else
     str = ""
     array.each_with_index do |ele, idx|
-      if idx != (-1)
+      if ele != array[-1]
         str += ele + ", "
-      elsif idx == (-1)
+      elsif ele == array[-1]
         str += "and " + ele
       end
     end
